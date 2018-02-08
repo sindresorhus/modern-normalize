@@ -7,6 +7,7 @@
 
 - Half the size
 - Includes only normalizations for the latest Chrome and Firefox
+- [Doesn't force `font-family: sans-serif` on buttons and inputs](https://github.com/necolas/normalize.css/issues/694)
 - Actively maintained
 
 
