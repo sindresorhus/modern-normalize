@@ -22,8 +22,6 @@ If you have questions about the source, check out the [original source](https://
 
 [**The goal of this project is to make itself obsolete.**](https://github.com/sindresorhus/modern-normalize/issues/2)
 
-[![Build Status](https://travis-ci.org/sindresorhus/modern-normalize.svg?branch=master)](https://travis-ci.org/sindresorhus/modern-normalize)
-
 
 ## Install
 
@@ -47,6 +45,11 @@ or
 ```html
 <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
 ```
+
+
+## Related
+
+- [sass-extras](https://github.com/sindresorhus/sass-extras) - Useful utilities for working with Sass
 
 
 ## License
