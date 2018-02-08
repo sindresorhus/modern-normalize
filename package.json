@@ -15,7 +15,9 @@
 		"node": ">=6"
 	},
 	"scripts": {
-		"test": "stylelint modern-normalize.css"
+		"test": "stylelint modern-normalize.css",
+		"minify": "gulp cleancss",
+		"watch-minify": "gulp"
 	},
 	"files": [
 		"modern-normalize.css"
@@ -28,6 +30,10 @@
 		"style"
 	],
 	"devDependencies": {
+		"gulp": "^3.9.1",
+		"gulp-clean-css": "^3.9.2",
+		"gulp-plumber": "^1.2.0",
+		"gulp-rename": "^1.2.2",
 		"stylelint": "^8.4.0",
 		"stylelint-config-xo": "^0.5.1"
 	},

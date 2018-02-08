@@ -4,25 +4,19 @@
    ========================================================================== */
 
 /**
- * Use a better box model (opinionated).
+ * 1. Use a better box model (opinionated).
+ * 2. Correct the line height in all browsers.
  */
 
 html {
 	box-sizing: border-box;
+	line-height: 1.15;
 }
 
 *,
 *::before,
 *::after {
 	box-sizing: inherit;
-}
-
-/**
- * Correct the line height in all browsers.
- */
-
-html {
-	line-height: 1.15;
 }
 
 /* Sections
