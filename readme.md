@@ -1,6 +1,11 @@
-# modern-normalize [![Build Status](https://travis-ci.org/sindresorhus/modern-normalize.svg?branch=master)](https://travis-ci.org/sindresorhus/modern-normalize)
-
-> Normalize browsers' default style
+<div align="center">
+	<img src="https://rawgit.com/sindresorhus/modern-normalize/master/media/logo.svg" alt="modern-normalize">
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+</div>
 
 
 ## Differences from [`normalize.css`](https://github.com/necolas/normalize.css)
@@ -10,6 +15,10 @@
 - [Doesn't force `font-family: sans-serif` on buttons and inputs](https://github.com/necolas/normalize.css/issues/694)
 - [Sets `box-sizing: border-box`](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
 - Actively maintained
+
+All credit should go to `normalize.css`. I just removed some cruft and added some improvements.
+
+[![Build Status](https://travis-ci.org/sindresorhus/modern-normalize.svg?branch=master)](https://travis-ci.org/sindresorhus/modern-normalize)
 
 
 ## Install
