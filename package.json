@@ -1,0 +1,31 @@
+{
+	"name": "modern-normalize",
+	"version": "0.0.0",
+	"description": "Normalize browsers' default style",
+	"license": "MIT",
+	"repository": "sindresorhus/modern-normalize",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "sindresorhus.com"
+	},
+	"main": "modern-normalize.css",
+	"style": "modern-normalize.css",
+	"engines": {
+		"node": ">=6"
+	},
+	"scripts": {
+		"test": ""
+	},
+	"files": [
+		"modern-normalize.css"
+	],
+	"keywords": [
+		"normalize",
+		"css",
+		"reset",
+		"browser",
+		"style"
+	],
+	"devDependencies": {}
+}
