@@ -18,6 +18,8 @@
 
 All credit should go to `normalize.css`. I just removed some cruft and added some improvements.
 
+If you have questions about the source, check out the [original source](https://github.com/necolas/normalize.css/blame/master/normalize.css) and [this](https://github.com/necolas/normalize.css#extended-details-and-known-issues) for details.
+
 [**The goal of this project is to make itself obsolete.**](https://github.com/sindresorhus/modern-normalize/issues/2)
 
 [![Build Status](https://travis-ci.org/sindresorhus/modern-normalize.svg?branch=master)](https://travis-ci.org/sindresorhus/modern-normalize)
