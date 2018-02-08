@@ -11,7 +11,7 @@
 ## Differences from [`normalize.css`](https://github.com/necolas/normalize.css)
 
 - Half the size
-- Includes only normalizations for the latest Chrome and Firefox
+- Includes only normalizations for the latest Chrome, Firefox, and Safari
 - [Doesn't force `font-family: sans-serif` on buttons and inputs](https://github.com/necolas/normalize.css/issues/694)
 - [Sets `box-sizing: border-box`](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
 - Actively maintained

@@ -72,6 +72,14 @@ pre {
    ========================================================================== */
 
 /**
+ * Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+
+a {
+	-webkit-text-decoration-skip: objects;
+}
+
+/**
  * Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 
@@ -159,6 +167,16 @@ select { /* 1 */
 }
 
 /**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type='reset'],
+[type='submit'] {
+	-webkit-appearance: button;
+}
+
+/**
  * Remove the inner border and padding in Firefox.
  */
 
@@ -216,11 +234,13 @@ progress {
 }
 
 /**
- * Correct the odd appearance in Chrome and Safari.
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
  */
 
 [type='search'] {
-	-webkit-appearance: textfield;
+	-webkit-appearance: textfield; /* 1 */
+	outline-offset: -2px; /* 2 */
 }
 
 /**
@@ -230,6 +250,16 @@ progress {
 [type='search']::-webkit-search-cancel-button,
 [type='search']::-webkit-search-decoration {
 	-webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+	-webkit-appearance: button; /* 1 */
+	font: inherit; /* 2 */
 }
 
 /* Interactive
