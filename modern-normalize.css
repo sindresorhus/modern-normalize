@@ -4,6 +4,20 @@
    ========================================================================== */
 
 /**
+ * Use a better box model (opinionated).
+ */
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+/**
  * Correct the line height in all browsers.
  */
 
