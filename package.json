@@ -34,8 +34,7 @@
 	"stylelint": {
 		"extends": "stylelint-config-xo",
 		"rules": {
-			"font-family-no-duplicate-names": null,
-			"declaration-block-no-duplicate-properties": null
+			"font-family-no-duplicate-names": null
 		}
 	}
 }
