@@ -37,6 +37,24 @@ body {
 }
 
 /**
+ * Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+ */
+
+body {
+	font-family:
+		-apple-system,
+		BlinkMacSystemFont,
+		'Segoe UI',
+		Roboto,
+		Helvetica,
+		Arial,
+		sans-serif,
+		'Apple Color Emoji',
+		'Segoe UI Emoji',
+		'Segoe UI Symbol';
+}
+
+/**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
@@ -56,16 +74,6 @@ h1 {
 hr {
 	box-sizing: content-box; /* 1 */
 	height: 0; /* 1 */
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-
-pre {
-	font-family: monospace, monospace; /* 1 */
-	font-size: 1em; /* 2 */
 }
 
 /* Text-level semantics
@@ -89,14 +97,15 @@ strong {
 }
 
 /**
- * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 
 code,
 kbd,
-samp {
-	font-family: monospace, monospace; /* 1 */
+samp,
+pre {
+	font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Courier, monospace; /* 1 */
 	font-size: 1em; /* 2 */
 }
 
