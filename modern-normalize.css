@@ -29,7 +29,7 @@ html {
    ========================================================================== */
 
 /**
- * Remove the margin in all browsers (opinionated).
+ * Remove the margin in all browsers.
  */
 
 body {
@@ -72,15 +72,7 @@ pre {
    ========================================================================== */
 
 /**
- * Remove gaps in links underline in iOS 8+ and Safari 8+.
- */
-
-a {
-	-webkit-text-decoration-skip: objects;
-}
-
-/**
- * Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ * Add the correct text decoration in Chrome, Edge, and Safari.
  */
 
 abbr[title] {
@@ -157,7 +149,7 @@ textarea {
 }
 
 /**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * Remove the inheritance of text transform in Edge and Firefox.
  * 1. Remove the inheritance of text transform in Firefox.
  */
 
@@ -171,6 +163,7 @@ select { /* 1 */
  */
 
 button,
+[type='button'],
 [type='reset'],
 [type='submit'] {
 	-webkit-appearance: button;
@@ -217,7 +210,7 @@ legend {
 }
 
 /**
- * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ * Add the correct vertical alignment in Chrome and Firefox.
  */
 
 progress {
@@ -244,10 +237,9 @@ progress {
 }
 
 /**
- * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ * Remove the inner padding in Chrome and Safari on macOS.
  */
 
-[type='search']::-webkit-search-cancel-button,
 [type='search']::-webkit-search-decoration {
 	-webkit-appearance: none;
 }
@@ -266,7 +258,7 @@ progress {
    ========================================================================== */
 
 /*
- * Add the correct display in Edge, IE, and Firefox.
+ * Add the correct display in Edge and Firefox.
  */
 
 details {

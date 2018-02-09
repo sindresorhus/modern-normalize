@@ -10,17 +10,20 @@
 
 ## Differences from [`normalize.css`](https://github.com/necolas/normalize.css)
 
-- Half the size
+- Smaller
 - Includes only normalizations for the latest Chrome, Firefox, and Safari
-- [Doesn't force `font-family: sans-serif` on buttons and inputs](https://github.com/necolas/normalize.css/issues/694)
 - [Sets `box-sizing: border-box`](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
-- Actively maintained
 
-All credit should go to `normalize.css`. I just removed some cruft and added some improvements.
-
-If you have questions about the source, check out the [original source](https://github.com/necolas/normalize.css/blame/master/normalize.css) and [this](https://github.com/necolas/normalize.css#extended-details-and-known-issues) for details.
+All credit should go to `normalize.css`. I just removed some cruft and added some improvements. If you have questions about the source, check out the [original source](https://github.com/necolas/normalize.css/blame/master/normalize.css) and [this](https://github.com/necolas/normalize.css#extended-details-and-known-issues) for details.
 
 [**The goal of this project is to make itself obsolete.**](https://github.com/sindresorhus/modern-normalize/issues/2)
+
+
+## Browser support
+
+- Latest Chrome
+- Latest Firefox
+- Latest Safari
 
 
 ## Install
