@@ -15,10 +15,11 @@
 		"node": ">=6"
 	},
 	"scripts": {
-		"test": "stylelint modern-normalize.css"
+		"test": "stylelint *.css"
 	},
 	"files": [
-		"modern-normalize.css"
+		"modern-normalize.css",
+		"modern-base.css"
 	],
 	"keywords": [
 		"normalize",
@@ -35,7 +36,8 @@
 		"extends": "stylelint-config-xo",
 		"rules": {
 			"font-family-no-duplicate-names": null,
-			"no-duplicate-selectors": null
+			"no-duplicate-selectors": null,
+			"selector-no-vendor-prefix": null
 		}
 	}
 }

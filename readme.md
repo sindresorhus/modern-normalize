@@ -62,6 +62,12 @@ or
 <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
 ```
 
+This package also includes a base style with better defaults:
+
+```css
+@import 'node_modules/modern-normalize/modern-base.css';
+```
+
 
 ## Related
 

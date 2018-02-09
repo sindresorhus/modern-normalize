@@ -1,0 +1,142 @@
+/*! modern-base | MIT License | https://github.com/sindresorhus/modern-normalize */
+
+/**
+ * 1. Break up words and URLs so they don't break your layout.
+ * 2. Improve font rendering in Chrome and Safari on macOS.
+ */
+
+html {
+	word-break: break-all; /* 1 */
+	-webkit-font-smoothing: antialiased; /* 2 */
+}
+
+/**
+ * Remove default spacing.
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dd,
+dl,
+pre {
+	margin: 0;
+}
+
+/**
+ * Show link underline only on hover.
+ */
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/**
+ * Remove outline on active/hovered focused links.
+ */
+
+a:active,
+a:hover {
+	outline-width: 0;
+}
+
+/**
+ * Correct the text style of placeholders in Chrome and Safari.
+ * See discussion: https://github.com/necolas/normalize.css/issues/550
+ */
+
+::-webkit-input-placeholder {
+	color: inherit;
+	opacity: 0.54;
+}
+
+/**
+ * Remove text shadow from selections.
+ */
+
+::selection {
+	background: #b3d7fd;
+	text-shadow: none;
+}
+
+/**
+ * Remove outline from `:focus` pseudo element.
+ * Note: Don't forget to apply some styling for the focus state of elements that support it.
+ */
+
+:focus {
+	outline-width: 0;
+}
+
+/**
+ * Remove the list style on navigation lists.
+ */
+
+nav ol,
+nav ul {
+	list-style: none;
+}
+
+/**
+ * Better looking default horizontal rule
+ */
+
+hr {
+	display: block;
+	margin: 1em 0;
+	padding: 0;
+	border: 0;
+	border-top: 1px solid #ccc;
+}
+
+/**
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/**
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+	resize: vertical;
+}
+
+
+/**
+ * Remove the gap between these elements and the bottom of their containers.
+ * See: https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+svg,
+img,
+canvas,
+video,
+audio,
+iframe {
+	vertical-align: middle;
+}
+
+/**
+ * Set the tab size to a better default than 8
+ */
+
+:root {
+	-moz-tab-size: 4;
+	tab-size: 4;
+}
