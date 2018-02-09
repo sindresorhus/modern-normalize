@@ -32,6 +32,19 @@ All credit should go to `normalize.css`. I just removed some cruft and added som
 $ npm install modern-normalize
 ```
 
+###### Download
+
+- [Normal](https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css)
+- [Minified](https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.min.css)
+
+###### CDN
+
+- [jsdelivr](https://www.jsdelivr.com/package/npm/modern-normalize)
+- [unpkg](https://unpkg.com/modern-normalize)
+- cdnjs *(Someone please [submit it](https://github.com/cdnjs/cdnjs))*
+
+---
+
 <a href="https://www.patreon.com/sindresorhus">
 	<img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
 </a>
