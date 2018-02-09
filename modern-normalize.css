@@ -50,12 +50,11 @@ h1 {
    ========================================================================== */
 
 /**
- * 1. Add the correct box sizing in Firefox.
+ * Add the correct height in Firefox.
  */
 
 hr {
-	box-sizing: content-box; /* 1 */
-	height: 0; /* 1 */
+	height: 0;
 }
 
 /**
