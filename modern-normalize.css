@@ -18,6 +18,15 @@ html {
 }
 
 /**
+ * Use a more readable tab size (opinionated).
+ */
+
+:root {
+	-moz-tab-size: 4;
+	tab-size: 4;
+}
+
+/**
  * Correct the line height in all browsers.
  */
 

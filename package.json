@@ -34,7 +34,8 @@
 	"stylelint": {
 		"extends": "stylelint-config-xo",
 		"rules": {
-			"no-duplicate-selectors": null
+			"no-duplicate-selectors": null,
+			"no-descending-specificity": null
 		}
 	}
 }
