@@ -37,7 +37,8 @@
 		"rules": {
 			"font-family-no-duplicate-names": null,
 			"no-duplicate-selectors": null,
-			"selector-no-vendor-prefix": null
+			"selector-no-vendor-prefix": null,
+			"media-feature-name-no-vendor-prefix": null
 		}
 	}
 }

@@ -1,13 +1,25 @@
 /*! modern-base | MIT License | https://github.com/sindresorhus/modern-normalize */
 
+
 /**
- * 1. Break up words and URLs so they don't break your layout.
- * 2. Improve font rendering in Chrome and Safari on macOS.
+ * Improve font rendering on HiDPI devices.
+ */
+
+@media
+	screen and (-webkit-min-device-pixel-ratio: 2),
+	screen and (min-resolution: 2dppx) {
+	body {
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing: antialiased;
+	}
+}
+
+/**
+ * Break up words and URLs so they don't break your layout.
  */
 
 html {
-	word-break: break-all; /* 1 */
-	-webkit-font-smoothing: antialiased; /* 2 */
+	word-break: break-all;
 }
 
 /**
