@@ -56,6 +56,9 @@ $ npm install modern-normalize
 
 ```css
 @import 'node_modules/modern-normalize/modern-normalize.css';
+
+/* If you use a module bundler like webpack, try this: */
+@import '~/modern-normalize/modern-normalize.css';
 ```
 
 or
