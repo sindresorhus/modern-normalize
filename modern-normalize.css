@@ -275,15 +275,7 @@ progress {
    ========================================================================== */
 
 /*
- * Add the correct display in Edge and Firefox.
- */
-
-details {
-	display: block;
-}
-
-/*
- * Add the correct display in all browsers.
+ * Add the correct display in Chrome and Safari.
  */
 
 summary {
