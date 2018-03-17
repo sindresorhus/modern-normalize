@@ -281,3 +281,14 @@ progress {
 summary {
 	display: list-item;
 }
+
+/* Images
+   ========================================================================== */
+
+/**
+ * Prevent image overflow (opinionated).
+ */
+
+img {
+	max-width: 100%;
+}
