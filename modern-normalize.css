@@ -286,9 +286,10 @@ summary {
    ========================================================================== */
 
 /**
- * Prevent image overflow (opinionated).
+ * Prevent media overflow (opinionated).
  */
 
-img {
+img,
+video {
 	max-width: 100%;
 }
