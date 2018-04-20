@@ -1,5 +1,5 @@
 <div align="center">
-	<img src="https://rawgit.com/sindresorhus/modern-normalize/master/media/logo.svg" alt="modern-normalize">
+	<img src="media/logo.svg" alt="modern-normalize">
 	<br>
 	<br>
 	<br>
