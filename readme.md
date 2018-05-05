@@ -43,7 +43,7 @@ $ npm install modern-normalize
 
 - [jsdelivr](https://www.jsdelivr.com/package/npm/modern-normalize)
 - [unpkg](https://unpkg.com/modern-normalize)
-- cdnjs *(Someone please [submit it](https://github.com/cdnjs/cdnjs))*
+- [cdnjs](https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.4.0/modern-normalize.min.css)
 
 ---
 
