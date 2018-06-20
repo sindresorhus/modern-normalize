@@ -271,3 +271,15 @@ progress {
 summary {
 	display: list-item;
 }
+
+/* Media
+   ========================================================================== */
+
+/**
+ * Prevent media overflow (opinionated).
+ */
+
+img,
+video {
+	max-width: 100%;
+}
