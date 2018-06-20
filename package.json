@@ -28,14 +28,15 @@
 		"style"
 	],
 	"devDependencies": {
-		"stylelint": "^8.4.0",
-		"stylelint-config-xo": "^0.5.1"
+		"stylelint": "^9.3.0",
+		"stylelint-config-xo": "^0.9.0"
 	},
 	"stylelint": {
 		"extends": "stylelint-config-xo",
 		"rules": {
 			"no-duplicate-selectors": null,
-			"no-descending-specificity": null
+			"no-descending-specificity": null,
+			"property-no-vendor-prefix": null
 		}
 	}
 }

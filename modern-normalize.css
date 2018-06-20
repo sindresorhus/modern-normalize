@@ -118,8 +118,7 @@ small {
 }
 
 /**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
+ * Prevent `sub` and `sup` elements from affecting the line height in all browsers.
  */
 
 sub,
@@ -210,8 +209,7 @@ fieldset {
 }
 
 /**
- * Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
+ * Remove the padding so developers are not caught out when they zero out `fieldset` elements in all browsers.
  */
 
 legend {
