@@ -121,17 +121,20 @@ textarea {
 	resize: vertical;
 }
 
-
-/**
- * Remove the gap between these elements and the bottom of their containers.
- * See: https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
 svg,
 img,
 canvas,
 video,
 audio,
 iframe {
+	/**
+	 * Remove the gap between these elements and the bottom of their containers.
+	 * See: https://github.com/h5bp/html5-boilerplate/issues/440
+	 */
 	vertical-align: middle;
+	
+	/**
+	 * Prevent overflow.
+	 */
+	max-width: 100%;
 }
