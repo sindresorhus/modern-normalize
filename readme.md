@@ -47,7 +47,7 @@ $ npm install modern-normalize
 
 ###### CSS-in-JS
 
-- [`@styled/modern-normalize`](https://www.npmjs.com/package/@styled/modern-normalize)
+- [@styled/modern-normalize](https://www.npmjs.com/package/@styled/modern-normalize)
 
 ---
 
