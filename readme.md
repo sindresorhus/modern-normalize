@@ -45,6 +45,10 @@ $ npm install modern-normalize
 - [unpkg](https://unpkg.com/modern-normalize)
 - [cdnjs](https://cdnjs.com/libraries/modern-normalize)
 
+###### CSS-in-JS
+
+- [`@styled/modern-normalize`](https://www.npmjs.com/package/@styled/modern-normalize)
+
 ---
 
 <a href="https://www.patreon.com/sindresorhus">
