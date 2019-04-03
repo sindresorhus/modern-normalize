@@ -1,6 +1,6 @@
 import { Selector } from 'testcafe';
 
-fixture `Firefox Validation Tests`
+fixture `Safari Validation Tests`
     .page `http://localhost:8080/test/page/without-css.html`;
 
 test('Remove the margin in all browsers.', async t => {
