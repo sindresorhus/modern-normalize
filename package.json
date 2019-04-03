@@ -15,10 +15,11 @@
 		"node": ">=6"
 	},
 	"scripts": {
-		"test": "npm run test:stylelint && npm run test:chrome && npm run test:firefox",
+		"test": "npm run test:stylelint",
 		"test:stylelint": "stylelint modern-normalize.css",
 		"test:chrome": "testcafe chrome:headless test/acceptance/chrome --app \"http-server . -s\"",
-		"test:firefox": "testcafe firefox:headless test/acceptance/firefox --app \"http-server . -s\""
+		"test:firefox": "testcafe firefox:headless test/acceptance/firefox --app \"http-server . -s\"",
+		"test:safari": "testcafe safari test/acceptance/safari --app \"http-server . -s\""
 	},
 	"files": [
 		"modern-normalize.css"

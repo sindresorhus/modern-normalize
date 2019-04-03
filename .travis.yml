@@ -4,3 +4,11 @@ node_js: "stable"
 addons:
   firefox: latest
   chrome: stable
+
+os: osx
+
+script:
+  - npm test
+  - npm run test:chrome
+  - npm run test:firefox
+  - npm run test:safari
