@@ -1,8 +1,5 @@
 import { Selector } from 'testcafe';
 
-// BlinkMacSystemFont is being replaced by system-ui in mac osx
-const SystemUIFont = process.platform === 'darwin' ? 'system-ui' : 'BlinkMacSystemFont';
-
 fixture `Safari Rules Tests`
     .page `http://localhost:8080/test/page/with-css.html`;
 
@@ -16,9 +13,9 @@ test('Remove the margin in all browsers.', async t => {
 
 test('Improve consistency of default fonts in all browsers.', async t => {
     await t
-        .expect(Selector('body').getStyleProperty('font-family')).eql(`-apple-system, ${SystemUIFont}, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"`);
+        .expect(Selector('body').getStyleProperty('font-family')).eql(`-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"`);
 });
-    
+
 test('Add the correct height in Firefox.', async t => {
     await t
         .expect(Selector('hr[data-test--hr]').getStyleProperty('height')).eql('2px');
