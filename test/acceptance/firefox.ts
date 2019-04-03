@@ -3,6 +3,19 @@ import { Selector } from 'testcafe';
 fixture `Firefox Tests`
     .page `http://localhost:8080/test/page/index.html`;
 
+test('Remove the margin in all browsers.', async t => {
+    await t
+        .expect(Selector('body').getStyleProperty('margin-top')).eql('0px')
+        .expect(Selector('body').getStyleProperty('margin-right')).eql('0px')
+        .expect(Selector('body').getStyleProperty('margin-bottom')).eql('0px')
+        .expect(Selector('body').getStyleProperty('margin-left')).eql('0px');
+});
+
+test('Improve consistency of default fonts in all browsers.', async t => {
+    await t
+        .expect(Selector('body').getStyleProperty('font-family')).eql('-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"');
+});
+    
 test('Add the correct height in Firefox.', async t => {
     await t
         .expect(Selector('hr[data-test--hr]').getStyleProperty('height')).eql('2px');
