@@ -15,7 +15,10 @@
 		"node": ">=6"
 	},
 	"scripts": {
-		"test": "stylelint modern-normalize.css"
+		"test": "npm run test:stylelint && npm run test:chrome && npm run test:firefox",
+		"test:stylelint": "stylelint modern-normalize.css",
+		"test:chrome": "testcafe chrome test/acceptance/chrome.ts --app \"http-server . -s\"",
+		"test:firefox": "testcafe firefox test/acceptance/firefox.ts --app \"http-server . -s\""
 	},
 	"files": [
 		"modern-normalize.css"
@@ -28,8 +31,10 @@
 		"style"
 	],
 	"devDependencies": {
+		"http-server": "^0.11.1",
 		"stylelint": "^9.3.0",
-		"stylelint-config-xo": "^0.9.0"
+		"stylelint-config-xo": "^0.9.0",
+		"testcafe": "^1.1.0"
 	},
 	"stylelint": {
 		"extends": "stylelint-config-xo",
