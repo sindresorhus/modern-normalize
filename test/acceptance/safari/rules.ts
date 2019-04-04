@@ -21,7 +21,7 @@ test('Correct the line height in all browsers.', async t => {
 
 test('Prevent adjustments of font size after orientation changes in iOS.', async t => {
     await t
-        .expect(Selector('html').getStyleProperty('text-size-adjust')).eql('100%');
+        .expect(Selector('html').getStyleProperty('-webkit-text-size-adjust')).eql('100%');
 });
 
 test('Remove the margin in all browsers.', async t => {
