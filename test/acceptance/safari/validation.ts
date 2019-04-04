@@ -22,7 +22,7 @@ test('Correct the line height in all browsers.', async t => {
 test('Prevent adjustments of font size after orientation changes in iOS.', async t => {
     await t
         // TODO: check behavior of -webkit-text-size-adjust changing to auto in safari
-        .expect(Selector('html').getStyleProperty('-webkit-text-size-adjust')).notEql('auto');
+        .expect(Selector('html').getStyleProperty('-webkit-text-size-adjust')).eql('auto');
 });
 
 test('Remove the margin in all browsers.', async t => {
