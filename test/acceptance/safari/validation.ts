@@ -16,12 +16,13 @@ test('Use a more readable tab size (opinionated).', async t => {
 test('Correct the line height in all browsers.', async t => {
     await t
         .expect(Selector('html').getStyleProperty('font-size')).eql('16px')
-        .expect(Selector('html').getStyleProperty('line-height')).notEql('18px');
+        .expect(Selector('html').getStyleProperty('line-height')).eql('18px');
 });
 
 test('Prevent adjustments of font size after orientation changes in iOS.', async t => {
     await t
-        .expect(Selector('html').getStyleProperty('-webkit-text-size-adjust')).notEql('100%');
+        // TODO: check behavior of -webkit-text-size-adjust changing to auto in safari
+        .expect(Selector('html').getStyleProperty('-webkit-text-size-adjust')).notEql('auto');
 });
 
 test('Remove the margin in all browsers.', async t => {
@@ -87,10 +88,10 @@ test('Change the font styles in all browsers.', async t => {
 
 test('Remove the margin in Firefox and Safari.', async t => {
     await t
-        .expect(Selector('[data-test--forms-1]').getStyleProperty('margin-top')).eql('0px')
-        .expect(Selector('[data-test--forms-1]').getStyleProperty('margin-right')).eql('0px')
-        .expect(Selector('[data-test--forms-1]').getStyleProperty('margin-bottom')).eql('0px')
-        .expect(Selector('[data-test--forms-1]').getStyleProperty('margin-left')).eql('0px');
+        .expect(Selector('[data-test--forms-1]').getStyleProperty('margin-top')).notEql('0px')
+        .expect(Selector('[data-test--forms-1]').getStyleProperty('margin-right')).notEql('0px')
+        .expect(Selector('[data-test--forms-1]').getStyleProperty('margin-bottom')).notEql('0px')
+        .expect(Selector('[data-test--forms-1]').getStyleProperty('margin-left')).notEql('0px');
 });
 
 test('Remove the inheritance of text transform in Firefox.', async t => {
@@ -108,16 +109,16 @@ test('Correct the inability to style clickable types in iOS and Safari.', async 
 });
 
 test('Remove the inner border and padding in Firefox.', async t => {
-    // -moz-focus-inner does not exist in chrome
+    // -moz-focus-inner does not exist in safari
 });
 
 test('Restore the focus styles unset by the previous rule.', async t => {
-    // -moz-focusring does not exist in chrome
+    // -moz-focusring does not exist in safari
 });
 
 test('Correct the padding in Firefox.', async t => {
     await t
-        .expect(Selector('fieldset[data-test--forms-2]').getStyleProperty('padding-top')).eql('5.6px')
+        .expect(Selector('fieldset[data-test--forms-2]').getStyleProperty('padding-top')).eql('5.599999904632568px')
         .expect(Selector('fieldset[data-test--forms-2]').getStyleProperty('padding-right')).eql('12px')
         .expect(Selector('fieldset[data-test--forms-2]').getStyleProperty('padding-bottom')).eql('10px')
         .expect(Selector('fieldset[data-test--forms-2]').getStyleProperty('padding-left')).eql('12px');

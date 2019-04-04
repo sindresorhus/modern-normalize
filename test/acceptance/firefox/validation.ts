@@ -108,11 +108,11 @@ test('Correct the inability to style clickable types in iOS and Safari.', async 
 });
 
 test('Remove the inner border and padding in Firefox.', async t => {
-    // -moz-focus-inner does not exist in chrome
+    // TODO: Pseudo-elements selector not supported by testcafe (See https://github.com/DevExpress/testcafe/issues/2813).
 });
 
 test('Restore the focus styles unset by the previous rule.', async t => {
-    // -moz-focusring does not exist in chrome
+    // TODO: Pseudo-elements selector not supported by testcafe (See https://github.com/DevExpress/testcafe/issues/2813).
 });
 
 test('Correct the padding in Firefox.', async t => {
