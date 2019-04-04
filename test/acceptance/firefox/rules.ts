@@ -52,3 +52,28 @@ test('Add the correct font weight in Chrome, Edge, and Safari.', async t => {
         .expect(Selector('b[data-test--bold]').getStyleProperty('font-weight')).eql('900')
         .expect(Selector('strong[data-test--bold]').getStyleProperty('font-weight')).eql('900');
 });
+
+test('Improve consistency of default fonts in all browsers.', async t => {
+    await t
+        .expect(Selector('[data-test--code]').getStyleProperty('font-family')).eql('SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace');
+});
+
+test('Correct the odd `em` font sizing in all browsers.', async t => {
+    await t
+        .expect(Selector('[data-test--code]').getStyleProperty('font-size')).eql('16px');
+});
+
+test('Add the correct font size in all browsers.', async t => {
+    await t
+        .expect(Selector('[data-test--small]').getStyleProperty('font-size')).eql('12.8px');
+});
+
+test('Prevent `sub` and `sup` elements from affecting the line height in all browsers.', async t => {
+    await t
+        .expect(Selector('[data-test--subsup]').getStyleProperty('font-size')).eql('12px')
+        .expect(Selector('[data-test--subsup]').getStyleProperty('line-height')).eql('0px')
+        .expect(Selector('[data-test--subsup]').getStyleProperty('position')).eql('relative')
+        .expect(Selector('[data-test--subsup]').getStyleProperty('vertical-align')).eql('baseline')
+        .expect(Selector('sub[data-test--subsup]').getStyleProperty('bottom')).eql('-3px')
+        .expect(Selector('sup[data-test--subsup]').getStyleProperty('top')).eql('-6px');
+});

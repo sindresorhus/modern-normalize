@@ -16,7 +16,8 @@ test('Use a more readable tab size (opinionated).', async t => {
 test('Correct the line height in all browsers.', async t => {
     await t
         .expect(Selector('html').getStyleProperty('font-size')).eql('16px')
-        .expect(Selector('html').getStyleProperty('line-height')).eql('18.4px');
+        // In safari line-height of 1.15 == 18px!? The rule is (font-size-px) * (line-height-num) = (line-height-px)
+        .expect(Selector('html').getStyleProperty('line-height')).notEql('18px');
 });
 
 test('Prevent adjustments of font size after orientation changes in iOS.', async t => {
@@ -42,7 +43,7 @@ test('Add the correct height in Firefox.', async t => {
         .expect(Selector('hr[data-test--hr]').getStyleProperty('height')).eql('2px');
 });
 
-test('Add the correct text decoration in Chrome, Edge, and Safari.', async t => {
+test('Add the correct text decoration in Edge, and Safari.', async t => {
     // TODO: why text-decoration is none?
     // await t
     //     .expect(Selector('abbr[data-test--abbr]').getStyleProperty('text-decoration')).eql('underline dotted');
@@ -52,4 +53,29 @@ test('Add the correct font weight in Chrome, Edge, and Safari.', async t => {
     await t
         .expect(Selector('b[data-test--bold]').getStyleProperty('font-weight')).eql('900')
         .expect(Selector('strong[data-test--bold]').getStyleProperty('font-weight')).eql('900');
+});
+
+test('Improve consistency of default fonts in all browsers.', async t => {
+    await t
+        .expect(Selector('[data-test--code]').getStyleProperty('font-family')).eql('SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace');
+});
+
+test('Correct the odd `em` font sizing in all browsers.', async t => {
+    await t
+        .expect(Selector('[data-test--code]').getStyleProperty('font-size')).eql('16px');
+});
+
+test('Add the correct font size in all browsers.', async t => {
+    await t
+        .expect(Selector('[data-test--small]').getStyleProperty('font-size')).eql('12.8px');
+});
+
+test('Prevent `sub` and `sup` elements from affecting the line height in all browsers.', async t => {
+    await t
+        .expect(Selector('[data-test--subsup]').getStyleProperty('font-size')).eql('12px')
+        .expect(Selector('[data-test--subsup]').getStyleProperty('line-height')).eql('0px')
+        .expect(Selector('[data-test--subsup]').getStyleProperty('position')).eql('relative')
+        .expect(Selector('[data-test--subsup]').getStyleProperty('vertical-align')).eql('baseline')
+        .expect(Selector('sub[data-test--subsup]').getStyleProperty('bottom')).eql('-3px')
+        .expect(Selector('sup[data-test--subsup]').getStyleProperty('top')).eql('-6px');
 });
