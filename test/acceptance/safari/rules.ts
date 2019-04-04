@@ -66,7 +66,7 @@ test('Correct the odd `em` font sizing in all browsers.', async t => {
 
 test('Add the correct font size in all browsers.', async t => {
     await t
-        .expect(Selector('[data-test--small]').getStyleProperty('font-size')).eql('12.8px');
+        .expect(Selector('[data-test--small]').getStyleProperty('font-size')).eql('12.800000190734863px');
 });
 
 test('Prevent `sub` and `sup` elements from affecting the line height in all browsers.', async t => {
@@ -83,7 +83,7 @@ test('Change the font styles in all browsers.', async t => {
     await t
         .expect(Selector('[data-test--forms-1]').getStyleProperty('font-family')).eql('MYCUSTOMFONT')
         .expect(Selector('[data-test--forms-1]').getStyleProperty('font-size')).eql('16px')
-        .expect(Selector('[data-test--forms-1]').getStyleProperty('line-height')).eql('18.4px');
+        .expect(Selector('[data-test--forms-1]').getStyleProperty('line-height')).eql('18px');
 });
 
 test('Remove the margin in Firefox and Safari.', async t => {
