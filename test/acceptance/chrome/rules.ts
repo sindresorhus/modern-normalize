@@ -6,6 +6,27 @@ const SystemUIFont = process.platform === 'darwin' ? 'system-ui' : 'BlinkMacSyst
 fixture `Chrome Rules Tests`
     .page `http://localhost:8080/test/page/with-css.html`;
 
+test('Use a better box model (opinionated).', async t => {
+    await t
+        .expect(Selector('html').getStyleProperty('box-sizing')).eql('border-box');
+});
+
+test('Use a more readable tab size (opinionated).', async t => {
+    await t
+        .expect(Selector('html').getStyleProperty('tab-size')).eql('4');
+});
+
+test('Correct the line height in all browsers.', async t => {
+    await t
+        .expect(Selector('html').getStyleProperty('font-size')).eql('16px')
+        .expect(Selector('html').getStyleProperty('line-height')).eql('18.4px');
+});
+
+test('Prevent adjustments of font size after orientation changes in iOS.', async t => {
+    await t
+        .expect(Selector('html').getStyleProperty('text-size-adjust')).eql('100%');
+});
+
 test('Remove the margin in all browsers.', async t => {
     await t
         .expect(Selector('body').getStyleProperty('margin-top')).eql('0px')
@@ -24,7 +45,7 @@ test('Add the correct height in Firefox.', async t => {
         .expect(Selector('hr[data-test--hr]').getStyleProperty('height')).eql('2px');
 });
 
-test('Add the correct text decoration in Chrome, Edge, and Safari.', async t => {
+test('Add the correct text decoration in Edge, and Safari.', async t => {
     await t
         .expect(Selector('abbr[data-test--abbr]').getStyleProperty('text-decoration')).eql('underline dotted rgb(0, 0, 0)');
 });

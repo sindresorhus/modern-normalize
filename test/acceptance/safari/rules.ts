@@ -3,6 +3,27 @@ import { Selector } from 'testcafe';
 fixture `Safari Rules Tests`
     .page `http://localhost:8080/test/page/with-css.html`;
 
+test('Use a better box model (opinionated).', async t => {
+    await t
+        .expect(Selector('html').getStyleProperty('box-sizing')).eql('border-box');
+});
+
+test('Use a more readable tab size (opinionated).', async t => {
+    await t
+        .expect(Selector('html').getStyleProperty('tab-size')).eql('4');
+});
+
+test('Correct the line height in all browsers.', async t => {
+    await t
+        .expect(Selector('html').getStyleProperty('font-size')).eql('16px')
+        .expect(Selector('html').getStyleProperty('line-height')).eql('18.4px');
+});
+
+test('Prevent adjustments of font size after orientation changes in iOS.', async t => {
+    await t
+        .expect(Selector('html').getStyleProperty('text-size-adjust')).eql('100%');
+});
+
 test('Remove the margin in all browsers.', async t => {
     await t
         .expect(Selector('body').getStyleProperty('margin-top')).eql('0px')
