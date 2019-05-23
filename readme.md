@@ -45,12 +45,6 @@ $ npm install modern-normalize
 - [unpkg](https://unpkg.com/modern-normalize)
 - [cdnjs](https://cdnjs.com/libraries/modern-normalize)
 
----
-
-<a href="https://www.patreon.com/sindresorhus">
-	<img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
-</a>
-
 
 ## Usage
 
@@ -75,8 +69,3 @@ There's absolutely no reason to have separate ports for these. They are just CSS
 ## Related
 
 - [sass-extras](https://github.com/sindresorhus/sass-extras) - Useful utilities for working with Sass
-
-
-## License
-
-MIT
