@@ -15,7 +15,8 @@
 		"node": ">=6"
 	},
 	"scripts": {
-		"test": "stylelint modern-normalize.css"
+		"test": "stylelint modern-normalize.css",
+		"version": "replace-in-files --regex='v\\d+\\.\\d+\\.\\d+' --replacement=v$npm_package_version modern-normalize.css && git add ."
 	},
 	"files": [
 		"modern-normalize.css"
@@ -28,6 +29,7 @@
 		"style"
 	],
 	"devDependencies": {
+		"replace-in-files-cli": "^0.1.0",
 		"stylelint": "^9.3.0",
 		"stylelint-config-xo": "^0.9.0"
 	},
