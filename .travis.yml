@@ -1,15 +1,11 @@
+os: osx
 language: node_js
-node_js: "stable"
-
+node_js: stable
 before_install:
   - stty cols 80
-
 addons:
   firefox: latest
   chrome: stable
-
-os: osx
-
 script:
   - npm test
   - npm run test:chrome
