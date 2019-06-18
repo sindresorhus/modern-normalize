@@ -19,7 +19,8 @@
 		"test:stylelint": "stylelint modern-normalize.css",
 		"test:chrome": "testcafe chrome:headless test/acceptance/chrome --app \"http-server . -s\"",
 		"test:firefox": "testcafe firefox:headless test/acceptance/firefox --app \"http-server . -s\"",
-		"test:safari": "testcafe safari test/acceptance/safari --app \"http-server . -s\""
+		"test:safari": "testcafe safari test/acceptance/safari --app \"http-server . -s\"",
+		"version": "replace-in-files --regex='v\\d+\\.\\d+\\.\\d+' --replacement=v$npm_package_version modern-normalize.css && git add ."
 	},
 	"files": [
 		"modern-normalize.css"
@@ -33,6 +34,7 @@
 	],
 	"devDependencies": {
 		"http-server": "^0.11.1",
+		"replace-in-files-cli": "^0.1.0",
 		"stylelint": "^9.3.0",
 		"stylelint-config-xo": "^0.9.0",
 		"testcafe": "^1.1.0"

@@ -1,4 +1,4 @@
-/*! modern-normalize | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*! modern-normalize v0.5.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
 /* Document
    ========================================================================== */
@@ -98,7 +98,7 @@ strong {
 
 /**
  * 1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
- * 2. Correct the odd `em` font sizing in all browsers.
+ * 2. Correct the odd 'em' font sizing in all browsers.
  */
 
 code,
@@ -118,7 +118,7 @@ small {
 }
 
 /**
- * Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+ * Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
  */
 
 sub,
@@ -209,7 +209,7 @@ fieldset {
 }
 
 /**
- * Remove the padding so developers are not caught out when they zero out `fieldset` elements in all browsers.
+ * Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
  */
 
 legend {
@@ -253,7 +253,7 @@ progress {
 
 /**
  * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
+ * 2. Change font properties to 'inherit' in Safari.
  */
 
 ::-webkit-file-upload-button {
