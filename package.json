@@ -37,7 +37,7 @@
 		"replace-in-files-cli": "^0.1.0",
 		"stylelint": "^9.3.0",
 		"stylelint-config-xo": "^0.9.0",
-		"testcafe": "^1.1.0"
+		"testcafe": "^1.6.1"
 	},
 	"stylelint": {
 		"extends": "stylelint-config-xo",
