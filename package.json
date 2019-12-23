@@ -17,6 +17,7 @@
 	},
 	"scripts": {
 		"test": "npm run test:stylelint",
+		"test:all": "npm run test:stylelint && npm run test:chrome && npm run test:firefox && npm run test:safari",
 		"test:stylelint": "stylelint modern-normalize.css",
 		"test:chrome": "testcafe chrome:headless test/acceptance/chrome --app \"http-server . --silent\"",
 		"test:firefox": "testcafe firefox:headless test/acceptance/firefox --app \"http-server . --silent\"",
