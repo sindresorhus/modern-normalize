@@ -1,3 +1,14 @@
+os: osx
 language: node_js
 node_js:
-  - 'node'
+  - '12'
+before_install:
+  - stty cols 80
+addons:
+  firefox: latest
+  chrome: stable
+script:
+  - npm test
+  - npm run test:chrome
+  - npm run test:firefox
+  - npm run test:safari
