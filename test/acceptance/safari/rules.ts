@@ -35,7 +35,7 @@ test('Remove the margin in all browsers.', async t => {
 
 test('Improve consistency of default fonts in all browsers.', async t => {
 	await t
-		.expect(Selector('body').getStyleProperty('font-family')).eql(`system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"`);
+		.expect(Selector('body').getStyleProperty('font-family')).eql(`system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"`);
 });
 
 test('Add the correct height in Firefox.', async t => {
