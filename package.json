@@ -4,6 +4,7 @@
 	"description": "Normalize browsers' default style",
 	"license": "MIT",
 	"repository": "sindresorhus/modern-normalize",
+	"funding": "https://github.com/sponsors/sindresorhus",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
@@ -17,9 +18,9 @@
 	"scripts": {
 		"test": "npm run test:stylelint",
 		"test:stylelint": "stylelint modern-normalize.css",
-		"test:chrome": "testcafe chrome:headless test/acceptance/chrome --app \"http-server . -s\"",
-		"test:firefox": "testcafe firefox:headless test/acceptance/firefox --app \"http-server . -s\"",
-		"test:safari": "testcafe safari test/acceptance/safari --app \"http-server . -s\"",
+		"test:chrome": "testcafe chrome:headless test/acceptance/chrome --app \"http-server . --silent\"",
+		"test:firefox": "testcafe firefox:headless test/acceptance/firefox --app \"http-server . --silent\"",
+		"test:safari": "testcafe safari test/acceptance/safari --app \"http-server . --silent\"",
 		"version": "replace-in-files --regex='v\\d+\\.\\d+\\.\\d+' --replacement=v$npm_package_version modern-normalize.css && git add ."
 	},
 	"files": [
@@ -33,10 +34,10 @@
 		"style"
 	],
 	"devDependencies": {
-		"http-server": "^0.11.1",
-		"replace-in-files-cli": "^0.1.0",
-		"stylelint": "^9.3.0",
-		"stylelint-config-xo": "^0.9.0",
+		"http-server": "^0.12.0",
+		"replace-in-files-cli": "^0.3.0",
+		"stylelint": "^12.0.0",
+		"stylelint-config-xo": "^0.16.0",
 		"testcafe": "^1.6.1"
 	},
 	"stylelint": {
