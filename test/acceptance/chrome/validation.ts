@@ -55,7 +55,7 @@ test('Add the correct font weight in Chrome, Edge, and Safari.', async t => {
 
 test('Improve consistency of default fonts in all browsers.', async t => {
 	await t
-		.expect(Selector('[data-test--code]').getStyleProperty('font-family')).notEql('SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace');
+		.expect(Selector('[data-test--code]').getStyleProperty('font-family')).notEql('SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace');
 });
 
 test('Correct the odd `em` font sizing in all browsers.', async t => {
