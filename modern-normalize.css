@@ -109,6 +109,7 @@ kbd,
 samp,
 pre {
 	font-family:
+		ui-monospace,
 		SFMono-Regular,
 		Consolas,
 		'Liberation Mono',
