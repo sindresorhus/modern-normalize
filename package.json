@@ -1,6 +1,6 @@
 {
 	"name": "modern-normalize",
-	"version": "0.6.0",
+	"version": "0.7.0",
 	"description": "Normalize browsers' default style",
 	"license": "MIT",
 	"repository": "sindresorhus/modern-normalize",
