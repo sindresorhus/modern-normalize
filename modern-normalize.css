@@ -127,6 +127,22 @@ small {
 }
 
 /**
+Remove text indentation from table contents in Chrome and Safari.
+*/
+
+table {
+	text-indent: 0;
+}
+
+/**
+Correct table border color inheritance in all browsers.
+*/
+
+table, thead, tbody, tfoot {
+	border-color: inherit;
+}
+
+/**
 Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
 */
 
