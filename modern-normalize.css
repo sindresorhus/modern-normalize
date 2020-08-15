@@ -138,7 +138,10 @@ table {
 Correct table border color inheritance in all browsers.
 */
 
-table, thead, tbody, tfoot {
+table,
+thead,
+tbody,
+tfoot {
 	border-color: inherit;
 }
 
