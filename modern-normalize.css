@@ -153,6 +153,8 @@ Tabular data
 
 /**
 Remove text indentation from table contents in Chrome and Safari.
+- https://bugs.chromium.org/p/chromium/issues/detail?id=999088
+- https://bugs.webkit.org/show_bug.cgi?id=201297
 */
 
 table {
@@ -161,6 +163,8 @@ table {
 
 /**
 Correct table border color inheritance in all browsers.
+- https://bugs.chromium.org/p/chromium/issues/detail?id=935729
+- https://bugs.webkit.org/show_bug.cgi?id=195016
 */
 
 table,
