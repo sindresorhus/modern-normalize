@@ -192,10 +192,7 @@ button,
 Remove the inner border and padding in Firefox.
 */
 
-button::-moz-focus-inner,
-[type='button']::-moz-focus-inner,
-[type='reset']::-moz-focus-inner,
-[type='submit']::-moz-focus-inner {
+::-moz-focus-inner {
 	border-style: none;
 	padding: 0;
 }
@@ -204,11 +201,17 @@ button::-moz-focus-inner,
 Restore the focus styles unset by the previous rule.
 */
 
-button:-moz-focusring,
-[type='button']:-moz-focusring,
-[type='reset']:-moz-focusring,
-[type='submit']:-moz-focusring {
+:-moz-focusring {
 	outline: 1px dotted ButtonText;
+}
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+
+:-moz-ui-invalid {
+	box-shadow: none;
 }
 
 /**
@@ -231,8 +234,8 @@ progress {
 Correct the cursor style of increment and decrement buttons in Safari.
 */
 
-[type='number']::-webkit-inner-spin-button,
-[type='number']::-webkit-outer-spin-button {
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
 	height: auto;
 }
 
@@ -250,7 +253,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 Remove the inner padding in Chrome and Safari on macOS.
 */
 
-[type='search']::-webkit-search-decoration {
+::-webkit-search-decoration {
 	-webkit-appearance: none;
 }
 
