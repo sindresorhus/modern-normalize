@@ -2,11 +2,26 @@
 	<img src="media/logo.svg" alt="modern-normalize">
 	<br>
 	<br>
+	<div align="center">
+		<p>
+			<p>
+				<sup>
+					<a href="https://github.com/sponsors/sindresorhus">My open source work is supported by the community</a>
+				</sup>
+			</p>
+			<sup>Special thanks to:</sup>
+			<br>
+			<br>
+			<a href="https://standardresume.co/tech">
+				<img src="https://sindresorhus.com/assets/thanks/standard-resume-logo.svg" width="200"/>
+			</a>
+		</p>
+	</div>
+	<br>
 	<br>
 	<br>
 	<br>
 </div>
-
 
 ## Differences from [`normalize.css`](https://github.com/necolas/normalize.css)
 
@@ -21,13 +36,11 @@ All credit should go to `normalize.css`. I just removed some cruft and added som
 
 [**The goal of this project is to make itself obsolete.**](https://github.com/sindresorhus/modern-normalize/issues/2)
 
-
 ## Browser support
 
 - Latest Chrome
 - Latest Firefox
 - Latest Safari
-
 
 ## Install
 
@@ -46,7 +59,6 @@ $ npm install modern-normalize
 - [unpkg](https://unpkg.com/modern-normalize)
 - [cdnjs](https://cdnjs.com/libraries/modern-normalize)
 
-
 ## Usage
 
 ```css
@@ -59,13 +71,11 @@ or
 <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
 ```
 
-
 ## FAQ
 
 ### Can you provide Sass, Less, etc, ports?
 
 There's absolutely no reason to have separate ports for these. They are just CSS supersets and can import CSS directly.
-
 
 ## Related
 
