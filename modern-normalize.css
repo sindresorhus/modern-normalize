@@ -19,7 +19,7 @@ Use a better box model (opinionated).
 Use a more readable tab size (opinionated).
 */
 
-:root {
+html {
 	-moz-tab-size: 4;
 	tab-size: 4;
 }
