@@ -16,22 +16,16 @@ Use a better box model (opinionated).
 }
 
 /**
-Use a more readable tab size (opinionated).
-*/
-
-html {
-	-moz-tab-size: 4;
-	tab-size: 4;
-}
-
-/**
 1. Correct the line height in all browsers.
 2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size (opinionated).
 */
 
 html {
 	line-height: 1.15; /* 1 */
 	-webkit-text-size-adjust: 100%; /* 2 */
+	-moz-tab-size: 4; /* 3 */
+	tab-size: 4; /* 3 */
 }
 
 /*
@@ -40,18 +34,12 @@ Sections
 */
 
 /**
-Remove the margin in all browsers.
+1. Remove the margin in all browsers.
+2. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
 */
 
 body {
-	margin: 0;
-}
-
-/**
-Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
-*/
-
-body {
+	margin: 0; /* 1 */
 	font-family:
 		system-ui,
 		-apple-system, /* Firefox supports this but not yet `system-ui` */
@@ -61,7 +49,7 @@ body {
 		Arial,
 		sans-serif,
 		'Apple Color Emoji',
-		'Segoe UI Emoji';
+		'Segoe UI Emoji'; /* 2 */
 }
 
 /*
@@ -186,11 +174,10 @@ textarea {
 
 /**
 Remove the inheritance of text transform in Edge and Firefox.
-1. Remove the inheritance of text transform in Firefox.
 */
 
 button,
-select { /* 1 */
+select {
 	text-transform: none;
 }
 
