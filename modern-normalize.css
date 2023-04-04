@@ -15,31 +15,8 @@ Use a better box model (opinionated).
 	box-sizing: border-box;
 }
 
-/**
-1. Correct the line height in all browsers.
-2. Prevent adjustments of font size after orientation changes in iOS.
-3. Use a more readable tab size (opinionated).
-*/
-
 html {
-	line-height: 1.15; /* 1 */
-	-webkit-text-size-adjust: 100%; /* 2 */
-	-moz-tab-size: 4; /* 3 */
-	tab-size: 4; /* 3 */
-}
-
-/*
-Sections
-========
-*/
-
-/**
-1. Remove the margin in all browsers.
-2. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
-*/
-
-body {
-	margin: 0; /* 1 */
+	/* Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3) */
 	font-family:
 		system-ui,
 		'Segoe UI',
@@ -48,7 +25,20 @@ body {
 		Arial,
 		sans-serif,
 		'Apple Color Emoji',
-		'Segoe UI Emoji'; /* 2 */
+		'Segoe UI Emoji';
+	line-height: 1.15; /* 1. Correct the line height in all browsers. */
+	-webkit-text-size-adjust: 100%; /* 2. Prevent adjustments of font size after orientation changes in iOS. */
+	-moz-tab-size: 4; /* 3. Use a more readable tab size (opinionated). */
+	tab-size: 4; /* 3 */
+}
+
+/*
+Sections
+========
+*/
+
+body {
+	margin: 0; /* Remove the margin in all browsers. */
 }
 
 /*
