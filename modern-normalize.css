@@ -6,13 +6,17 @@ Document
 */
 
 /**
-Use a better box model (opinionated).
+Apply a more natural box layout model to all elements (opinionated), but allowing components to change,
+compare https://www.paulirish.com/2012/box-sizing-border-box-ftw/ 
+and https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
 */
-
+html {
+  box-sizing: border-box;
+}
 *,
-::before,
-::after {
-	box-sizing: border-box;
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 html {
