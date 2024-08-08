@@ -38,7 +38,7 @@ test('Improve consistency of default fonts in all browsers.', async t => {
 		.expect(Selector('body').getStyleProperty('font-family')).eql(`system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"`);
 });
 
-test('Add the correct height in Firefox.', async t => {
+test('<hr> should be the correct height.', async t => {
 	await t
 		.expect(Selector('hr[data-test--hr]').getStyleProperty('height')).eql('2px');
 });
