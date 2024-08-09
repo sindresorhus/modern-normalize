@@ -10,7 +10,7 @@ test('Use a better box model (opinionated).', async t => {
 
 test('Use a more readable tab size (opinionated).', async t => {
 	await t
-		.expect(Selector('html').getStyleProperty('-moz-tab-size')).eql('4');
+		.expect(Selector('html').getStyleProperty('tab-size')).eql('4');
 });
 
 test('Correct the line height in all browsers.', async t => {
