@@ -134,7 +134,7 @@ Tabular data
 */
 
 table {
-	border-color: inherit; /* 1 */
+	border-color: currentcolor; /* 1 */
 }
 
 /*
