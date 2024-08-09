@@ -95,7 +95,7 @@ test('Remove the margin in Firefox and Safari.', async t => {
 		.expect(Selector('[data-test--forms-1]').getStyleProperty('margin-left')).eql('0px');
 });
 
-test('Remove the inheritance of text transform in Firefox.', async t => {
+test('Text transform should not be inherited.', async t => {
 	await t
 		.expect(Selector('button[data-test--forms-1]').getStyleProperty('text-transform')).eql('none')
 		.expect(Selector('select[data-test--forms-1]').getStyleProperty('text-transform')).eql('none');
