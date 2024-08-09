@@ -107,14 +107,6 @@ test('Correct the inability to style clickable types in iOS and Safari.', async 
 		.expect(Selector('[type="submit"][data-test--forms-1]').getStyleProperty('-webkit-appearance')).eql('button');
 });
 
-test('Remove the inner border and padding in Firefox.', async t => {
-	// `-moz-focus-inner` does not exist in Chrome
-});
-
-test('Restore the focus styles unset by the previous rule.', async t => {
-	// `-moz-focusring` does not exist in Chrome
-});
-
 test('Correct the padding in Firefox.', async t => {
 	await t
 		.expect(Selector('fieldset[data-test--forms-2]').getStyleProperty('padding-top')).eql('5.6px')
