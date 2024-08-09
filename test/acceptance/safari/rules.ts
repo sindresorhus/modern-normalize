@@ -43,13 +43,13 @@ test('Add the correct height in Firefox.', async t => {
 		.expect(Selector('hr[data-test--hr]').getStyleProperty('height')).eql('2px');
 });
 
-test('Add the correct text decoration in Edge, and Safari.', async t => {
+test('Add the correct text decoration in Chrome and Safari.', async t => {
 	// TODO: Why `text-decoration` is none?
 	// await t
 	// 	.expect(Selector('abbr[data-test--abbr]').getStyleProperty('text-decoration')).eql('underline dotted');
 });
 
-test('Add the correct font weight in Chrome, Edge, and Safari.', async t => {
+test('Add the correct font weight in Chrome and Safari.', async t => {
 	await t
 		.expect(Selector('b[data-test--bold]').getStyleProperty('font-weight')).eql('900')
 		.expect(Selector('strong[data-test--bold]').getStyleProperty('font-weight')).eql('900');
