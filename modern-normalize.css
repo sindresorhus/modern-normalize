@@ -162,15 +162,6 @@ textarea {
 }
 
 /**
-Remove the inheritance of text transform in Edge and Firefox.
-*/
-
-button,
-select {
-	text-transform: none;
-}
-
-/**
 Correct the inability to style clickable types in iOS and Safari.
 */
 
