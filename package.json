@@ -35,11 +35,11 @@
 		"style"
 	],
 	"devDependencies": {
-		"http-server": "^0.12.0",
-		"replace-in-files-cli": "^0.3.0",
-		"stylelint": "^12.0.0",
-		"stylelint-config-xo": "^0.16.0",
-		"testcafe": "^1.6.1"
+		"http-server": "^14.1.1",
+		"replace-in-files-cli": "^3.0.0",
+		"stylelint": "^16.8.1",
+		"stylelint-config-xo": "^1.0.2",
+		"testcafe": "^3.6.2"
 	},
 	"stylelint": {
 		"extends": "stylelint-config-xo",
