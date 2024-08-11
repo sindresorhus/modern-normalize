@@ -46,14 +46,6 @@ Text-level semantics
 */
 
 /**
-Add the correct text decoration in Safari.
-*/
-
-abbr[title] {
-	text-decoration: underline dotted;
-}
-
-/**
 Add the correct font weight in Chrome and Safari.
 */
 
