@@ -2,25 +2,6 @@
 	<img src="media/logo.svg" alt="modern-normalize">
 	<br>
 	<br>
-	<div align="center">
-		<p>
-			<p>
-				<sup>
-					<a href="https://github.com/sponsors/sindresorhus">My open source work is supported by the community</a>
-				</sup>
-			</p>
-			<sup>Special thanks to:</sup>
-			<br>
-			<br>
-			<a href="https://standardresume.co/tech">
-				<img src="https://sindresorhus.com/assets/thanks/standard-resume-logo.svg" width="200"/>
-			</a>
-		</p>
-	</div>
-	<br>
-	<br>
-	<br>
-	<br>
 </div>
 
 ## Differences from [`normalize.css`](https://github.com/necolas/normalize.css)
@@ -31,8 +12,9 @@
 - [Improves consistency of default fonts](https://github.com/sindresorhus/modern-normalize/issues/3)
 - [Sets a more readable tab size](https://github.com/sindresorhus/modern-normalize/issues/17)
 - Fully tested
+- Maintained
 
-All credit should go to `normalize.css`. I just removed some cruft and added some improvements. If you have questions about the source, check out the [original source](https://github.com/necolas/normalize.css/blame/master/normalize.css) and [this](https://github.com/necolas/normalize.css#extended-details-and-known-issues) for details.
+If you have questions about the source, check out the [original source](https://github.com/necolas/normalize.css/blame/master/normalize.css) and [this](https://github.com/necolas/normalize.css#extended-details-and-known-issues) for details.
 
 [**The goal of this project is to make itself obsolete.**](https://github.com/sindresorhus/modern-normalize/issues/2)
 
@@ -44,8 +26,8 @@ All credit should go to `normalize.css`. I just removed some cruft and added som
 
 ## Install
 
-```
-$ npm install modern-normalize
+```sh
+npm install modern-normalize
 ```
 
 ###### Download
