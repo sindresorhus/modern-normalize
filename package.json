@@ -12,7 +12,7 @@
 	},
 	"main": "modern-normalize.css",
 	"style": "modern-normalize.css",
-	"sideEffects": false,
+	"sideEffects": true,
 	"engines": {
 		"node": ">=6"
 	},
