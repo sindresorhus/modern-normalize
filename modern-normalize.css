@@ -42,8 +42,12 @@ Sections
 ========
 */
 
+/**
+Remove the margin in all browsers.
+*/
+
 body {
-	margin: 0; /* Remove the margin in all browsers. */
+	margin: 0;
 }
 
 /*
