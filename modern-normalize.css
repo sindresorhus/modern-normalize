@@ -112,19 +112,6 @@ sup {
 }
 
 /*
-Tabular data
-============
-*/
-
-/**
-Correct table border color inheritance in Chrome and Safari. (https://issues.chromium.org/issues/40615503, https://bugs.webkit.org/show_bug.cgi?id=195016)
-*/
-
-table {
-	border-color: currentcolor;
-}
-
-/*
 Forms
 =====
 */
