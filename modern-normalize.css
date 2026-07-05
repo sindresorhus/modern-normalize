@@ -6,7 +6,7 @@ Document
 */
 
 /**
-Use a better box model (opinionated).
+Use a better box model (opinionated). Box sizing should not be inherited. (https://www.oddbird.net/2025/09/04/box-model/)
 */
 
 *,
